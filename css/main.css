@@ -1,0 +1,65 @@
+:root {
+        --bg: #050508;
+            --panel: #0f101a;
+                --neon: #00f2ff;
+                    --text: #e0e0e0;
+                    }
+
+                    body {
+                        background-color: var(--bg);
+                            color: var(--text);
+                                font-family: 'Inter', sans-serif;
+                                    margin: 0;
+                                    }
+
+                                    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+                                    header {
+                                        background: var(--panel);
+                                            border-bottom: 2px solid var(--neon);
+                                                padding: 15px 0;
+                                                }
+
+                                                .nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
+
+                                                .logo { font-family: 'Orbitron', sans-serif; font-size: 1.8rem; font-weight: 700; letter-spacing: 2px; }
+                                                .logo span { color: var(--neon); }
+
+                                                .stats-panel { display: flex; gap: 20px; }
+                                                .stat-item { background: #1a1b26; padding: 5px 15px; border-radius: 5px; border-left: 3px solid var(--neon); }
+                                                .label { display: block; font-size: 0.6rem; color: var(--neon); }
+                                                .value { font-family: 'Orbitron', sans-serif; font-size: 0.9rem; }
+
+                                                .welcome-area { text-align: center; padding: 60px 0; }
+                                                .welcome-area h1 { font-family: 'Orbitron', sans-serif; font-size: 2.5rem; }
+
+                                                .game-grid {
+                                                    display: grid;
+                                                        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                                                            gap: 40px;
+                                                            }
+
+                                                            .game-card {
+                                                                background: var(--panel);
+                                                                    border: 1px solid rgba(255, 255, 255, 0.1);
+                                                                        padding: 40px;
+                                                                            border-radius: 15px;
+                                                                                text-align: center;
+                                                                                }
+
+                                                                                .play-btn {
+                                                                                    display: inline-block;
+                                                                                        margin-top: 25px;
+                                                                                            padding: 12px 30px;
+                                                                                                color: var(--neon);
+                                                                                                    border: 2px solid var(--neon);
+                                                                                                        text-decoration: none;
+                                                                                                            font-family: 'Orbitron', sans-serif;
+                                                                                                                font-weight: bold;
+                                                                                                                }
+
+                                                                                                                footer { text-align: center; padding: 40px; font-size: 0.8rem; opacity: 0.5; }
+
+                                                                                                                .locked { opacity: 0.4; filter: grayscale(1); }
+                                                                                                                
+}
